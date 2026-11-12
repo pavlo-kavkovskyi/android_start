@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloApp</string>
+    <string name="greeting">Hello, 4TP!</string>
+    <string name="button_click">Click me</string>
+    <string name="button_reset">Reset</string>
+    <string name="clicked">Clicked!</string>
+    <string name="clicked_times">Clicks: %1$d</string>
+</resources>

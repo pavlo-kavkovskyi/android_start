@@ -46,5 +46,8 @@ gradle/libs.versions.toml – zarządzanie wersjami bibliotek i wtyczek
 ## Zadanie 2
 <img width="387" height="853" alt="zad2AS" src="https://github.com/user-attachments/assets/d359ba26-7f37-468c-851b-62dc93d92b94" />
 
+## Zadanie 4
+<img width="315" height="700" alt="englishAS" src="https://github.com/user-attachments/assets/fbe4a704-3250-4e63-84ce-3dd0e2c2677f" />
+
 ## Autor
 Pavlo Kavkovskyi, 4A, 2026/2027
