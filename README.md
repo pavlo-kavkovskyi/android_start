@@ -49,5 +49,30 @@ gradle/libs.versions.toml – zarządzanie wersjami bibliotek i wtyczek
 ## Zadanie 4
 <img width="315" height="700" alt="englishAS" src="https://github.com/user-attachments/assets/fbe4a704-3250-4e63-84ce-3dd0e2c2677f" />
 
+## Mapa plików
+
+| Plik | Za co odpowiada | Odpowiednik w Django |
+|---|---|---|
+| `MainActivity.java` | klasa ekranu: wczytuje layout, obsługuje kliknięcia | `views.py` |
+| `res/layout/activity_main.xml` | wygląd ekranu: co, gdzie i jakiego rozmiaru | `templates/index.html` |
+| `AndroidManifest.xml` | nazwa, ikona, lista ekranów, uprawnienia, ekran startowy | `settings.py` + `urls.py` |
+| `res/values/strings.xml` | wszystkie teksty aplikacji (tłumaczenia w `values-en/`) | brak (najbliżej: pliki tłumaczeń `locale/`) |
+| `app/build.gradle.kts` | zależności, `minSdk`, `targetSdk`, wersja aplikacji | `requirements.txt` |
+| `res/` | zasoby: obrazki, kolory, layouty (każdy dostaje id w klasie `R`) | `static/` |
+| `res/mipmap-*/ic_launcher` | ikona aplikacji w różnych rozmiarach | `static/` (favicon) |
+| `.gitignore` | pliki pomijane przez Git (`build/`, `local.properties`) | `.gitignore` |
+
+## Logcat OnCreate
+<img width="1918" height="992" alt="logcatAS" src="https://github.com/user-attachments/assets/3804b30b-d12f-4ec6-84db-adb57e7f8688" />
+Celowo przestawiłem `findViewById` przed `setContentView`. Aplikacja zamknęła się przy starcie.
+
+![Stack trace]<img width="1634" height="584" alt="stacktrace" src="https://github.com/user-attachments/assets/6d8bfd4b-63e3-4f4e-9e10-7647eb41afff" />
+
+Zawiniła linia: _wpisz numer linii i kod, np. `MainActivity.java:42` – `buttonClick.setOnClickListener(...)`, bo `buttonClick` było `null`_.
+
+## Obrót ekranu
+
+Po obrocie telefonu licznik wraca do zera, bo system niszczy Activity i tworzy je od nowa (`onCreate` wykonuje się drugi raz, więc `clickCount = 0`); pełne wyjaśnienie w M02.
+
 ## Autor
 Pavlo Kavkovskyi, 4A, 2026/2027
