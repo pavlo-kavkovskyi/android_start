@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">HelloApp</string>
-    <string name="greeting">Cześć, 4TP!</string>
+    <string name="shop_title">4A Sklep</string>
+    <string name="shop_description">Mały sklep internetowy z gadżetami szkolnymi. Przeglądaj produkty, dodawaj je do koszyka i zamawiaj prosto z telefonu.</string>
+    <string name="button_start">Start</string>
+    <string name="coming_soon">Wkrótce</string>
+    <string name="greeting">Cześć, 4A!</string>
     <string name="button_click">Kliknij mnie</string>
     <string name="button_reset">Reset</string>
     <string name="clicked">Kliknięto!</string>

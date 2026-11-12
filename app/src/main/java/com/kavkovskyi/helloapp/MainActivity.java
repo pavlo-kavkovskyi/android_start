@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private TextView textGreeting;
+    private Button buttonStart;
     private Button buttonClick;
     private Button buttonReset;
     private int clickCount = 0;
@@ -35,8 +36,14 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: ekran utworzony, licznik = " + clickCount);
 
         textGreeting = findViewById(R.id.text_greeting);
+        buttonStart = findViewById(R.id.button_start);
         buttonClick = findViewById(R.id.button_click);
         buttonReset = findViewById(R.id.button_reset);
+
+        buttonStart.setOnClickListener(v -> {
+            Log.d(TAG, "Kliknięto Start");
+            Toast.makeText(this, R.string.coming_soon, Toast.LENGTH_SHORT).show();
+        });
 
         buttonClick.setOnClickListener(v -> {
             clickCount++;
