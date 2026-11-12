@@ -66,7 +66,8 @@ gradle/libs.versions.toml – zarządzanie wersjami bibliotek i wtyczek
 <img width="1918" height="992" alt="logcatAS" src="https://github.com/user-attachments/assets/3804b30b-d12f-4ec6-84db-adb57e7f8688" />
 Celowo przestawiłem `findViewById` przed `setContentView`. Aplikacja zamknęła się przy starcie.
 
-![Stack trace]<img width="1634" height="584" alt="stacktrace" src="https://github.com/user-attachments/assets/6d8bfd4b-63e3-4f4e-9e10-7647eb41afff" />
+## Stacktrace 
+<img width="1634" height="584" alt="stacktrace" src="https://github.com/user-attachments/assets/6d8bfd4b-63e3-4f4e-9e10-7647eb41afff" />
 
 Zawiniła linia: _wpisz numer linii i kod, np. `MainActivity.java:42` – `buttonClick.setOnClickListener(...)`, bo `buttonClick` było `null`_.
 
