@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">HelloApp</string>
-    <string name="greeting">Cześć, 4TP</string>
+    <string name="greeting">Cześć, 4TP!</string>
     <string name="button_click">Kliknij mnie</string>
+    <string name="button_reset">Reset</string>
     <string name="clicked">Kliknięto!</string>
+    <string name="clicked_times">Liczba kliknięć: %1$d</string>
 </resources>

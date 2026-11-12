@@ -1,6 +1,7 @@
 package com.kavkovskyi.helloapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -10,14 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String  TAG = "MainActivity";
+
+    private static final String TAG = "MainActivity";
+
     private TextView textGreeting;
-    private  Button buttonClick;
+    private Button buttonClick;
+    private Button buttonReset;
     private int clickCount = 0;
-    Log.d(TAG, "Kliknięto, licznik = " + clickCount);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +32,23 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        Log.d(TAG, "onCreate: ekran utworzony, licznik = " + clickCount);
+
         textGreeting = findViewById(R.id.text_greeting);
         buttonClick = findViewById(R.id.button_click);
+        buttonReset = findViewById(R.id.button_reset);
 
         buttonClick.setOnClickListener(v -> {
             clickCount++;
-            textGreeting.setText("Kliknięto " + clickCount + " razy");
+            textGreeting.setText(getString(R.string.clicked_times, clickCount));
             Toast.makeText(this, R.string.clicked, Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "Kliknięto, licznik = " + clickCount);
+        });
+
+        buttonReset.setOnClickListener(v -> {
+            clickCount = 0;
+            textGreeting.setText(R.string.greeting);
+            Log.d(TAG, "Reset, licznik = " + clickCount);
         });
     }
 }
