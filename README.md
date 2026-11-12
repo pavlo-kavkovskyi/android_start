@@ -1,3 +1,4 @@
+
 # android-start
 To jest pierwsza aplikacja zrobiona przez Android Studio. Jest dla mnie, dla polaków, dla pana Beyniarskiego.
 ## Technologie
@@ -41,5 +42,9 @@ gradle/libs.versions.toml – zarządzanie wersjami bibliotek i wtyczek
 - [x] wyświetlanie komunikatu `Toast`
 - [ ] przycisk resetowania licznika
 - [ ] zachowanie stanu licznika po obrocie ekranu
+
+## Zadanie 2
+<img width="387" height="853" alt="zad2AS" src="https://github.com/user-attachments/assets/d359ba26-7f37-468c-851b-62dc93d92b94" />
+
 ## Autor
 Pavlo Kavkovskyi, 4A, 2026/2027
