@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Własny obrazek (wektor): torba na zakupy -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <path
+        android:fillColor="#FF6750A4"
+        android:pathData="M12,22h40l-3,34H15z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M22,22v-4a10,10 0 0,1 20,0v4"
+        android:strokeColor="#FF6750A4"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+</vector>

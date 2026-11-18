@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <!-- Ekran startowy domeny: nagłówek, opis, przycisk Start -->
@@ -14,38 +15,25 @@
         android:layout_height="wrap_content"
         android:text="@string/shop_title"
         android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/text_description"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_description"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
         android:gravity="center"
         android:text="@string/shop_description"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@id/button_start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_title" />
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/button_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/button_start"
-        app:layout_constraintBottom_toTopOf="@id/text_greeting"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_description" />
+        android:text="@string/button_start" />
 
     <!-- Licznik z poprzednich etapów -->
     <TextView
@@ -54,32 +42,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="@string/greeting"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/button_click"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_start" />
+        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button_click"
-        android:layout_width="wrap_content"
+    <!-- Poziomy LinearLayout: dwa przyciski po połowie szerokości (weight) -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="@string/button_click"
-        app:layout_constraintBottom_toTopOf="@id/button_reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_greeting" />
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_click" />
+        <Button
+            android:id="@+id/button_click"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_click" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/button_reset" />
+    </LinearLayout>
+
+</LinearLayout>

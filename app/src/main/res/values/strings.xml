@@ -9,4 +9,63 @@
     <string name="button_reset">Reset</string>
     <string name="clicked">Kliknięto!</string>
     <string name="clicked_times">Liczba kliknięć: %1$d</string>
+    <string name="label_catalog">Katalog</string>
+    <string name="title_catalog">Katalog widgetów</string>
+    <string name="catalog_image_desc">Ikona torby na zakupy</string>
+    <string name="hint_name">Imię</string>
+    <string name="label_consent">Zgoda</string>
+    <string name="label_notifications">Powiadomienia</string>
+    <string name="size_s">S</string>
+    <string name="size_m">M</string>
+    <string name="size_l">L</string>
+    <string name="label_volume">Głośność: %1$d</string>
+    <string name="button_collect">Zbierz stan</string>
+    <string name="answer_yes">tak</string>
+    <string name="answer_no">nie</string>
+    <string name="answer_none">brak</string>
+    <string name="result_catalog">Imię: %1$s, zgoda: %2$s, powiadomienia: %3$s, rozmiar: %4$s, głośność: %5$d</string>
+    <string name="label_bmi">BMI</string>
+    <string name="title_bmi">Kalkulator BMI</string>
+    <string name="hint_weight">Waga (kg)</string>
+    <string name="hint_height">Wzrost (cm)</string>
+    <string name="button_calc">Oblicz</string>
+    <string name="button_clear">Wyczyść</string>
+    <string name="result_format">BMI: %1$.1f – %2$s</string>
+    <string name="error_required">Pole wymagane</string>
+    <string name="error_number">Niepoprawna liczba</string>
+    <string name="error_weight_range">Waga 20–300 kg</string>
+    <string name="error_height_range">Wzrost 50–250 cm</string>
+    <string name="bmi_under">niedowaga</string>
+    <string name="bmi_normal">waga prawidłowa</string>
+    <string name="bmi_over">nadwaga</string>
+    <string name="bmi_obese">otyłość</string>
+    <string name="radio_metric">kg / cm</string>
+    <string name="radio_imperial">lb / in</string>
+    <string name="hint_weight_lb">Waga (lb)</string>
+    <string name="hint_height_in">Wzrost (in)</string>
+    <string name="error_weight_range_lb">Waga 45–660 lb</string>
+    <string name="error_height_range_in">Wzrost 20–98 in</string>
+    <string name="label_order">Zamówienie</string>
+    <string name="title_order">Zamówienie w 4A Sklep</string>
+    <string name="hint_order_name">Imię i nazwisko</string>
+    <string name="hint_order_email">E-mail</string>
+    <string name="hint_order_quantity">Ilość (1–20)</string>
+    <string-array name="products">
+        <item>Wybierz produkt…</item>
+        <item>Długopis 4A</item>
+        <item>Zeszyt w kratkę</item>
+        <item>Plecak szkolny</item>
+        <item>Bluza 4A</item>
+    </string-array>
+    <string name="radio_courier">Kurier</string>
+    <string name="radio_pickup">Odbiór w szkole</string>
+    <string name="check_terms">Akceptuję regulamin</string>
+    <string name="button_save">Zapisz</string>
+    <string name="error_name">Minimum 3 znaki</string>
+    <string name="error_email">Niepoprawny adres e-mail</string>
+    <string name="error_quantity">Ilość od 1 do 20</string>
+    <string name="error_product">Wybierz produkt</string>
+    <string name="error_delivery">Wybierz sposób dostawy</string>
+    <string name="error_terms">Wymagana akceptacja regulaminu</string>
+    <string name="order_summary">Zamówienie: %1$s × %2$d, %3$s (%4$s), dostawa: %5$s</string>
 </resources>

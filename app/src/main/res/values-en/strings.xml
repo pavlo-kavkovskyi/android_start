@@ -9,4 +9,63 @@
     <string name="button_reset">Reset</string>
     <string name="clicked">Clicked!</string>
     <string name="clicked_times">Clicks: %1$d</string>
+    <string name="label_catalog">Catalog</string>
+    <string name="title_catalog">Widget catalog</string>
+    <string name="catalog_image_desc">Shopping bag icon</string>
+    <string name="hint_name">Name</string>
+    <string name="label_consent">Consent</string>
+    <string name="label_notifications">Notifications</string>
+    <string name="size_s">S</string>
+    <string name="size_m">M</string>
+    <string name="size_l">L</string>
+    <string name="label_volume">Volume: %1$d</string>
+    <string name="button_collect">Collect state</string>
+    <string name="answer_yes">yes</string>
+    <string name="answer_no">no</string>
+    <string name="answer_none">none</string>
+    <string name="result_catalog">Name: %1$s, consent: %2$s, notifications: %3$s, size: %4$s, volume: %5$d</string>
+    <string name="label_bmi">BMI</string>
+    <string name="title_bmi">BMI calculator</string>
+    <string name="hint_weight">Weight (kg)</string>
+    <string name="hint_height">Height (cm)</string>
+    <string name="button_calc">Calculate</string>
+    <string name="button_clear">Clear</string>
+    <string name="result_format">BMI: %1$.1f – %2$s</string>
+    <string name="error_required">Required field</string>
+    <string name="error_number">Invalid number</string>
+    <string name="error_weight_range">Weight 20–300 kg</string>
+    <string name="error_height_range">Height 50–250 cm</string>
+    <string name="bmi_under">underweight</string>
+    <string name="bmi_normal">normal weight</string>
+    <string name="bmi_over">overweight</string>
+    <string name="bmi_obese">obese</string>
+    <string name="radio_metric">kg / cm</string>
+    <string name="radio_imperial">lb / in</string>
+    <string name="hint_weight_lb">Weight (lb)</string>
+    <string name="hint_height_in">Height (in)</string>
+    <string name="error_weight_range_lb">Weight 45–660 lb</string>
+    <string name="error_height_range_in">Height 20–98 in</string>
+    <string name="label_order">Order</string>
+    <string name="title_order">Order at 4A Shop</string>
+    <string name="hint_order_name">Full name</string>
+    <string name="hint_order_email">E-mail</string>
+    <string name="hint_order_quantity">Quantity (1–20)</string>
+    <string-array name="products">
+        <item>Choose a product…</item>
+        <item>4A pen</item>
+        <item>Squared notebook</item>
+        <item>School backpack</item>
+        <item>4A hoodie</item>
+    </string-array>
+    <string name="radio_courier">Courier</string>
+    <string name="radio_pickup">Pickup at school</string>
+    <string name="check_terms">I accept the terms</string>
+    <string name="button_save">Save</string>
+    <string name="error_name">At least 3 characters</string>
+    <string name="error_email">Invalid e-mail address</string>
+    <string name="error_quantity">Quantity from 1 to 20</string>
+    <string name="error_product">Choose a product</string>
+    <string name="error_delivery">Choose a delivery method</string>
+    <string name="error_terms">You must accept the terms</string>
+    <string name="order_summary">Order: %1$s × %2$d, %3$s (%4$s), delivery: %5$s</string>
 </resources>
